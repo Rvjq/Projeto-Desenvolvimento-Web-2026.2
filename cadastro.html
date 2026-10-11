@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de clientes - NovaTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <main>
+    <div class="painel largo">
+      <a href="index.html"><img class="logo-form" src="img/logo-escuro.svg" alt="Logo da NovaTech Soluções em TI"></a>
+      <h1>Cadastro de clientes</h1>
+
+      <form id="formCadastro" onsubmit="return false;">
+        <table class="formulario">
+          <tr>
+            <td><label for="email">E-mail (login)</label></td>
+            <td><input type="text" id="email" placeholder="seuemail@exemplo.com"></td>
+          </tr>
+          <tr>
+            <td><label for="senha">Senha</label></td>
+            <td><input type="password" id="senha"></td>
+          </tr>
+          <tr>
+            <td><label for="confirmacao">Confirmação da senha</label></td>
+            <td><input type="password" id="confirmacao"></td>
+          </tr>
+          <tr>
+            <td>Regras de composição</td>
+            <td><output id="regras" class="instrucoes" style="display: block;"></output></td>
+          </tr>
+          <tr>
+            <td><label for="nome">Nome completo</label></td>
+            <td><input type="text" id="nome"></td>
+          </tr>
+          <tr>
+            <td><label for="cpf">CPF</label></td>
+            <td><input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14" inputmode="numeric"></td>
+          </tr>
+          <tr>
+            <td><label for="nascimento">Data de nascimento</label></td>
+            <td><input type="date" id="nascimento"></td>
+          </tr>
+          <tr>
+            <td><label for="telefone">Celular / WhatsApp (opcional)</label></td>
+            <td><input type="text" id="telefone" placeholder="(81) 99999-9999" maxlength="15" inputmode="numeric"></td>
+          </tr>
+          <tr>
+            <td>Estado civil</td>
+            <td>
+              <label><input type="radio" name="estadoCivil" value="solteiro" checked><span>Solteiro(a)</span></label>
+              <label><input type="radio" name="estadoCivil" value="casado"><span>Casado(a)</span></label>
+              <label><input type="radio" name="estadoCivil" value="divorciado"><span>Divorciado(a)</span></label>
+              <label><input type="radio" name="estadoCivil" value="viuvo"><span>Viúvo(a)</span></label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="escolaridade">Escolaridade</label></td>
+            <td>
+              <select id="escolaridade">
+                <option value="1grau-inc">1º grau incompleto</option>
+                <option value="1grau-comp">1º grau completo</option>
+                <option value="2grau-comp" selected>2º grau completo</option>
+                <option value="superior">Nível superior</option>
+                <option value="pos">Pós-graduado</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </form>
+
+      <p id="mensagem" class="mensagem"></p>
+
+      <div class="acoes">
+        <button type="button" id="btnIncluir" class="botao primario">Incluir</button>
+        <button type="button" id="btnLimpar" class="botao">Limpar</button>
+        <button type="button" id="btnVoltar" class="botao">Voltar</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/validacoes.js"></script>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

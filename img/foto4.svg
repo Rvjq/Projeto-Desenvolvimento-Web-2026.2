@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="280">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f4c5c"/><stop offset="1" stop-color="#2a9d8f"/></linearGradient></defs>
+<rect width="400" height="280" fill="url(#g)"/>
+<rect x="70" y="80" width="260" height="110" rx="8" fill="#0b2a33"/><rect x="85" y="95" width="110" height="80" fill="#e9f5f3"/><path d="M95 160l25-30 20 18 25-38 20 30" fill="none" stroke="#12355b" stroke-width="4"/><rect x="210" y="98" width="100" height="10" fill="#e8a317"/><rect x="210" y="120" width="100" height="10" fill="#9fd8d0"/><rect x="210" y="142" width="70" height="10" fill="#9fd8d0"/>
+<text x="200" y="262" text-anchor="middle" font-family="Verdana, sans-serif" font-size="15" fill="#ffffff">Sala de reuniões</text>
+</svg>

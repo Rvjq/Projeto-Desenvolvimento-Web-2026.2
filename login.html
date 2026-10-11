@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login de clientes - NovaTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <main>
+    <div class="painel">
+      <a href="index.html"><img class="logo-form" src="img/logo-escuro.svg" alt="Logo da NovaTech Soluções em TI"></a>
+      <h1>Login de clientes</h1>
+
+      <table class="formulario">
+        <tr>
+          <td><label for="login">Login (e-mail)</label></td>
+          <td><input type="text" id="login" placeholder="seuemail@exemplo.com"></td>
+        </tr>
+        <tr>
+          <td><label for="senha">Senha</label></td>
+          <td><input type="password" id="senha"></td>
+        </tr>
+      </table>
+
+      <p id="mensagem" class="mensagem"></p>
+
+      <div class="acoes">
+        <button type="button" id="btnLogin" class="botao primario">Realizar Login</button>
+        <button type="button" id="btnLimpar" class="botao">Limpar</button>
+      </div>
+
+      <p class="links-form">
+        <a href="trocar-senha.html">Esqueci / trocar minha senha</a>
+        <a href="cadastro.html">Cadastrar novo cliente</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="js/validacoes.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

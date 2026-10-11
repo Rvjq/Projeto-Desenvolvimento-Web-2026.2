@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação de serviços de TI - NovaTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="cabecalho">
+    <div class="cabecalho-interno">
+      <img src="img/logo.svg" alt="Logo da NovaTech Soluções em TI">
+      <h1>Solicitação de serviços de TI</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="usuario" class="card destaque">
+      <h2>Cliente logado</h2>
+      <div class="usuario">
+        <div>
+          <span class="rotulo-valor">Nome</span>
+          <span id="lblNome">Ana Paula Ferreira</span>
+        </div>
+        <div>
+          <span class="rotulo-valor">Login (e-mail)</span>
+          <span id="lblEmail">ana.ferreira@exemplo.com</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="pedidos">
+      <h2>Minhas solicitações</h2>
+      <div class="tabela-rolagem">
+        <table id="tabelaPedidos">
+          <thead>
+            <tr>
+              <th>Data do pedido</th>
+              <th>Nº</th>
+              <th>Serviço de TI</th>
+              <th>Status</th>
+              <th>Preço</th>
+              <th>Previsão</th>
+              <th>Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-data="2026-07-14">
+              <td>14/07/2026</td>
+              <td>1001</td>
+              <td>Backup em nuvem</td>
+              <td class="status-concluido">CONCLUÍDO</td>
+              <td>R$ 290,00</td>
+              <td>21/07/2026</td>
+              <td><button type="button" class="botao perigo">Excluir</button></td>
+            </tr>
+            <tr data-data="2026-08-30">
+              <td>30/08/2026</td>
+              <td>1002</td>
+              <td>Suporte técnico mensal</td>
+              <td class="status-em-andamento">EM ANDAMENTO</td>
+              <td>R$ 450,00</td>
+              <td>06/09/2026</td>
+              <td><button type="button" class="botao perigo">Excluir</button></td>
+            </tr>
+            <tr data-data="2026-09-25">
+              <td>25/09/2026</td>
+              <td>1003</td>
+              <td>Instalação de rede Wi-Fi</td>
+              <td class="status-em-andamento">EM ANDAMENTO</td>
+              <td>R$ 1.200,00</td>
+              <td>10/10/2026</td>
+              <td><button type="button" class="botao perigo">Excluir</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="nova" class="card">
+      <h2>Nova solicitação</h2>
+      <table class="formulario">
+        <tr>
+          <td><label for="servico">Serviço de TI</label></td>
+          <td>
+            <select id="servico">
+              <option value="">Selecione um serviço</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <div class="resumo">
+        <div>
+          Preço
+          <span class="rotulo-valor" id="lblPreco">-</span>
+        </div>
+        <div>
+          Prazo de atendimento
+          <span class="rotulo-valor" id="lblPrazo">-</span>
+        </div>
+        <div>
+          Data prevista
+          <span class="rotulo-valor" id="lblPrevisao">-</span>
+        </div>
+        <div>
+          Status
+          <span class="rotulo-valor status-em-elaboracao" id="lblStatus">EM ELABORAÇÃO</span>
+        </div>
+      </div>
+
+      <p id="mensagem" class="mensagem"></p>
+
+      <div class="acoes">
+        <button type="button" id="btnIncluir" class="botao primario">Incluir solicitação</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/carrinho.js"></script>
+</body>
+</html>
