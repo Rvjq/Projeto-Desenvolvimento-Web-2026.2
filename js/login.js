@@ -36,3 +36,11 @@ document.getElementById("btnLimpar").addEventListener("click", function () {
   mensagem.textContent = "";
   campoLogin.focus();
 });
+
+document.getElementById("btnVoltar").addEventListener("click", function () {
+  if (window.history.length > 1) {
+    window.history.back();
+  } else {
+    window.location.href = "index.html";
+  }
+});
